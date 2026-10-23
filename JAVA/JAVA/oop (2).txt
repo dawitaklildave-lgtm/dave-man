@@ -1,0 +1,1338 @@
+_NAME MAMARU DEMEKE TEGEGNE 
+_COUNTRY OF  Ethiopia
+_AMHARA/EAST GOJJAM/HULLET EJJU ENSSE/MOTTA/A.SELAM/NEPHTEGE.SELASSE
+_REIGION Ortodocs Tewahdo 
+ _ UNIVERCITY MAU 
+          department of computer sciense
+ 1.  package pra.pkg2;
+
+import java.util.Scanner;
+public class Pra2 {
+    public static void main(String[] args) {
+
+        Scanner celc=new Scanner(System.in);
+        System.out .print("pleace inter the celcauos");
+        int a=celc.nextInt();
+        int b=(9/5*a)+32;
+        System.out .println(b);
+}
+2.   package last;
+import java.util.Scanner;
+// how to find the last digit of any real number(ma de)
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        Scanner obj=new Scanner(System.in);
+        System.out.println("please enter any number");
+        int num=obj.nextInt();
+        int lastdigit =num%10;
+       System.out.println("the last digit of " +num + "is" +lastdigit ) ;  
+    } 
+}
+3. package compstudent;
+import java .util.Scanner;
+class PGStudent {
+    private int id; 
+    private String name;
+    private int year;
+    private double salary;
+    private String faculty;
+    
+   public PGStudent()
+   {
+       Scanner input=new Scanner(System.in);
+       this.name=input.nextLine() ;
+       this.year=5;
+       this.faculty="informatics";
+       
+   }
+   public PGStudent(int id,double salary )
+   
+       this();
+       this.id=id;
+       this.salary=salary;
+   }
+   public void printInfo()
+   {
+       System.out.println("name:"+this.name);//this indicate  stude[i]
+          System.out.println("ID:"+this.id);
+          System.out.println("faculty:"+this.faculty);
+   }
+}
+4. public class PATERN {
+    public static void main(String[] args) {
+        // TODO code application logic here
+        for(int i=0;i<5;i++)
+        {
+            for(int j=0;j<i;j++)
+                System.out.print("*");
+            System.out.println();//if using only print with out ln the code ii eror;
+        }
+    }
+    
+}
+5. package display.the.spatial.caracter;
+
+import java.util.Scanner;
+public class DISPLAYTHESPATIALCARACTER {
+    public static void main(String[] args) {
+        // TODO code application logic here
+       //DISPLAY ANY DIAGONAL SLASH OR ANY NUMBER ,LETER,CARACTER;
+        Scanner input=new Scanner(System.in);
+        System.out.println("please the size");
+        int size=input.nextInt();
+        int i,j;
+        for( i=0;i<size;i++)
+        {
+            for( j=0;j<=i;j++)
+            {
+            if(i==j)
+             System.out.print('\\');
+            else
+                
+               System.out.print(" ") ;   
+            }
+            System.out.println()     
+        }
+}}
+6. package factorial_n_no;
+import java.util.Scanner;
+public class Factorial_n_no {
+    public static void main(String[] args) {
+          Scanner obj=new Scanner(System.in);
+          System.out.println("please enter the value of ");
+        int num=obj.nextInt();
+       int  fact =1;
+        for (int i=1;i<=num;i++)
+        {
+            fact*=i;
+        }
+      System.out.println("the factorial of\t"+ num +"\t=\t" +fact); 
+    }
+}
+7. package grade.of.studen;
+import java.util.Scanner;
+public class GradeOfStuden {
+    public static void main(String[] args) {
+        Scanner grade=new Scanner(System.in);
+  System.out .print("enter the mark of the student");
+        double mark=grade.nextInt();
+        if(mark>=85&&mark<100)
+          System.out .println("A");
+           if(mark>=70&&mark<85)
+            System.out .println("B");
+            if(mark>=60&&mark<70)
+                System.out .println("C");
+                if(mark>=40&&mark<50)
+                        System.out .println("D");
+                        if(mark<=40)
+                            System.out .println("F");
+                        if (mark<0||mark>100)
+            System.out .println("INVALID MARK");
+          }
+}                   
+                           
+8.  public class calcule {
+    public static void main(String[] args) {
+        //find the area or circle by using java program
+       
+         int j;
+         int sum=0;
+        int d[][]={{2,5},{6,8},{5,7}};
+        for (int i=0;i<3;i++)
+        { 
+            sum=0;
+        for( j=0;j<2;j++)
+        { 
+            sum=sum+d[i][j]; 
+            }
+        System.out.println("the sum of row is\t"+sum); 
+        }
+      
+       System.out.println("very good continiue") ;
+         
+    }
+}
+
+9. package javaapplication32;
+public class JavaApplication32 {
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int n=100,t1=0,t2=1;
+        while(t1<=n)
+        {
+            System.out.print("\t"+t1);
+            int sum=t1+t2;
+            t1=t2;
+            t2=sum;
+        }
+    }
+    
+}
+         out put
+
+0	1	1	2	3	5	8	13	21	34	55	89
+
+********************************************
+  10.   package secance;
+public class Secance {
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int an=0;
+        int sum=0;
+        for(int i=1;i<5;i++)
+        {
+           
+           an+=2*i+5;
+        }
+        System.out.println("the summition is  "+an);
+    }
+    
+}
+out put
+the summition is  40
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+11.  package secunce;
+public class SECUNCE {
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int an=0;
+        int sum=0;
+        for(int i=1;i<5;i++)
+        {
+           
+           an+=2*i+5;
+        
+        System.out.println("A"+i+" is "+an);
+       an=0;
+    }
+    
+}
+}  
+
+out put
+A1 is 7
+A2 is 9
+A3 is 11
+A4 is 13
+###################$$$$$$$$$$$$%%%%%
+13.  package javaapplication45;
+import java.util.Scanner;
+public class JavaApplication45 {
+        public static void main(String[] args) {
+       Scanner num=new Scanner(System.in);
+        System.out.println("please intrr the num1 value");
+        int num1=num .nextInt();
+        if(num1%2==0)
+        System.out.println("the number is zero");
+        else
+            System.out.println("the number is odd");       
+    }    
+}
+out put
+please intrr the num1 value
+45
+the number is odd
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+14.  package javaapplication46;
+import java.util.Scanner;
+public class JavaApplication46 {
+    public static void main(String[] args) {
+        Scanner motta=new Scanner(System.in);
+        System.out.println("please enter any number");
+        int num=motta.nextByte();
+        int sede=0;
+        for(int i=2;i<num;i++)
+        {
+            if(num%i==0)
+            {    sede++;
+            break ;
+            }
+        }
+    if(sede==0)
+    {
+     System.out.println("the number is prim");
+    }
+    else
+       System.out.println("the number is composite");
+    }
+    
+}
+out put
+please enter any number
+
+45
+the number is composite
+wwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+16.  package javaapplication46;
+import java.util.Scanner;
+public class JavaApplication46
+ {
+    public static void main(String[] args)
+ { 
+       Scanner motta=new Scanner(System.in);
+        System.out.println("please enter num1");
+        int num1=motta.nextByte();
+        System.out.println("please enter num2");
+         int num2=motta.nextByte();
+         System.out.println("please enter num3");
+          int num3=motta.nextByte();
+          if(num1>num2&&num1>num3)
+    System.out.println("the largest num is "+num1);
+          else if(num2>num1&&num2>num3)
+    System.out.println("the largest num is "+num2);
+          else
+    System.out.println("the lagest num is "+num3);      
+}
+out put
+please enter num1
+78
+please enter num2
+45
+please enter num3
+90
+the lagest num is 90
+
+********************************************17.  package compu.student;
+public class studen
+{
+    private String name;
+    private int year;
+    public void setData(String name,int year)
+    {
+        this.name=name;
+        this.year=year;
+        
+    }
+    public void display()//instance variable
+    {
+        System.out.println("name:"+this.name);
+        System.out.println("year:"+this.year);
+    }
+       public static void main(String[] args)
+       {
+           studen stud1=new studen();
+            studen stud2=new studen();
+             studen stud3=new studen();
+           stud1.setData("mamaru",2023);
+           stud2.setData("zeleke",2024);
+           stud3.setData("abay",2023);
+             stud1.display();
+             stud2.display();
+             stud3.display();
+             
+           
+       }
+    }
+out put
+name:mamaru
+year:2023
+name:zeleke
+year:2024
+name:abay
+year:2023
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+18.  package compstudent;
+class UGStudent {
+    String name;
+    int year;
+    static int count=0;
+    public UGStudent(String name,int year)
+    {
+        this .name=name;
+        this.year=year; 
+        count++;
+    }
+    public String description()
+    {
+        return name+ "2nd year"+ year;
+        
+    }
+}
+    public class studentTest
+            {
+        public static void main(String args[])
+        {
+            UGStudent stud1=new UGStudent("mamaru",2023);
+            UGStudent stud2=new UGStudent("zelalem",2023);
+            UGStudent stud3=new UGStudent("nigus",2023);
+            UGStudent stud4=new UGStudent("zeleke",2023);
+            System.out.println(stud1.description());
+              System.out.println(stud2.description());
+                System.out.println(stud3.description());
+                  System.out.println(stud4.description());
+            System.out.println("the number of instance:"+UGStudent.count);
+        }
+    }
+        
+
+out put
+mamaru2nd year2023
+zelalem2nd year2023
+nigus2nd year2023
+zeleke2nd year2023
+the number of instance:4
+%%%%%%%%%%%%%%%%%%%%%%%%%
+package compstudent;
+import java .util.Scanner;
+class PGStudent {
+    private int id; 
+    private String name;
+    private int year;
+    private double salary;
+    private String faculty;
+    
+   public PGStudent()
+   {
+       Scanner input=new Scanner(System.in);
+       this.name=input.nextLine() ;
+       this.year=5;
+       this.faculty="informatics";
+       
+   }
+   public PGStudent(String name,int id,double salary )
+   {
+       this();
+       this.id=id;
+       this.salary=salary;
+   }
+   public void printInfo()
+   {
+       System.out.println("name:"+this.name);//this indicate  stude[i]
+          System.out.println("ID:"+this.id);
+          System.out.println("faculty:"+this.faculty);
+   }
+}
+
+Yyyyyyyyyyyyyuyuuhhuhuuuuuuuiiiiiiiiiiiiiiiiiooooooo
+
+
+19.  public class PGStudentTest
+{
+    public static void main(String []args)
+    {
+        PGStudent[] student=new PGStudent[3];
+        student[0]=new PGStudent("mamaru",1401666,1200);
+        student[1]=new PGStudent("zeleke",1402575,1000);
+        student[2]=new PGStudent("teferi",1401659,9800);
+        for(int i=0;i<student.length;i++);
+        {
+        }
+    }
+   
+package casting.d.type;
+public class automatic 
+{
+     public static void main(String[] args)
+     {
+      int i=100;
+      long l=i;
+      float f=l;
+      char str='a';
+      int num=str;
+         System.out.println("the int value  "+i);
+         System.out.println("the long value  "+l);
+         System.out.println("the float value "+f);
+         System.out.println("the int value  "+num);
+    }
+    
+}
+OUT PUT
+the int value  100
+the long value  100
+the float value 100.0
+the int value  97
+GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+
+20.  package javaapplication56;
+public class JavaApplication56 {
+    public static void main(String[] args) {
+       String tex="please locate where locate occurs!";
+        System.out.println("the lenth of text is  "+tex.length());//start from one to count
+        System.out.println("the location of licate from the text"+tex.indexOf("locate"));//start from 0(index)
+        /*start from the firs letter and count
+          space and letter and end gate the 
+          first number of the wanted string */
+    }
+    
+}
+OUT PUT
+the lenth of text is  34
+the location of licate from the text 7
+%%%%%%%%%%%%%%%%%%%%%%%%
+21.  package spatial.character;
+public class SpatialCharacter {
+ public static void main(String[] args) {
+     System.out.println("abebe siad that \"she is beauty full behavior\"");
+    }   
+}
+OUT PUT 
+abebe siad that "she is beauty full behavior"
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+22.  package jav.maths;
+public class JavMaths {
+ public static void main(String[] args)
+ {
+     System.out.println("sqart value "+(int)(Math.random()*90));//random b/n 0 upto 89
+     System.out.println("sqart value "+(int)Math.sqrt(36));
+     System.out.println("the minumem nubber "+Math.min(56,34));//only two num
+     System.out.println("the absolut of num "+Math.abs(-43.6));   
+    }
+    
+}
+OUT PUT
+sqart value 16
+sqart value 6
+the minumem nubber 34
+the absolut of num 43.6
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+23.  package stud.grade;
+
+import java.util.Scanner;
+
+public class grade {
+ public static void main(String[] args)
+ {Scanner input=new Scanner(System.in);
+     System.out.println("please enter stud mark");
+  int mar=input.nextInt();
+  if(mar>=90)
+         System.out.println('A');
+  else if(mar>=80)
+         System.out.println('B');
+  else if(mar>=70)
+         System.out.println('C');
+  else if(mar>=60)
+         System.out.println('D');
+  else if (mar>=50)
+         System.out.println('F');
+  else if(mar<50&&mar>=0)
+         System.out.println("the mark is b\n  0 and 50");
+  else
+         System.out.println(mar+"  is invalid");
+     
+    }
+    
+}
+OUT PUT                                                     
+please enter stud mark
+-56
+-56  is invalid
+
+please enter stud mark
+90
+A
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+24.   package mutiplication.table;
+public class MUTIPLICATIONTABLE
+{ public static void main(String[] args)
+    {
+        System.out.println("multiplication table ");
+        System.out.print("");
+        for(int j=1;j<=9;j++)
+            System.out.print("  "+j);
+        System.out.println("\n____________________________________________");
+        for(int i=1;i<=9;i++)
+        {
+            System.out.print("|");
+            for(int j = 1;j<=9;j++)
+            {
+                System.out.print("  " +i*j);   
+            }
+            System.out.println(); 
+        }
+        
+    }
+    
+}
+OUT PUT
+multiplication table 
+  1  2  3  4  5  6  7  8  9
+________________________________________
+|  1  2  3  4  5  6  7  8  9
+|  2  4  6  8  10  12  14  16  18
+|  3  6  9  12  15  18  21  24  27
+|  4  8  12  16  20  24  28  32  36
+|  5  10  15  20  25  30  35  40  45
+|  6  12  18  24  30  36  42  48  54
+|  7  14  21  28  35  42  49  56  63
+|  8  16  24  32  40  48  56  64  72
+|  9  18  27  36  45  54  63  72  81
+%%%%%%%%%%%%%%%%%%%%%%%%%
+25.   package arrayex;
+public class method
+ {
+    public static int sum(int a, int b) 
+    {
+     int sum=0;
+     for(int i=a;i<=b;i++)
+      sum +=i;
+     return sum;
+    }
+       public static void main(String[] args)
+    {
+        System.out.println("the sum of 1 upto 10 is   "+sum(1,10));
+        System.out.println("the sum of 20 upto 30 is   "+ sum(10,20));
+        System.out.println("the sum of 20 upto 40 is   "+sum(20 ,40));
+    }
+}
+out put
+the sum of 1 upto 10 is   55
+the sum of 20 upto 30 is   165
+the sum of 20 upto 40 is   630
+####################################
+27.  // ove lodding in java  the same name but differnt data type oy parametre 
+public class overlodded 
+{
+    // java method 
+    public static int sum( int a,int b)
+    {
+        int c =a+b;
+        return c;   
+    }
+     public static double sum( double a,double b)
+     {
+         double c =a+b;
+        return c; 
+     }
+     public static double sum( double a, double b, double c)
+     {
+         double d =a+b+c;
+        return d; 
+     }
+     //main method  
+     public static void main (String []args)
+     {
+         System.out.println("int sum ="+sum(23,56));
+         System.out.println(" double sum  2 para="+sum(23.5,12.56));
+         System.out.println(" double sum 3 para ="+ sum(23.5,12.56,34.3));
+     }
+    
+}
+out put 
+int sum =79
+ double sum  2 para=36.06
+ double sum 3 para =70.36
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+28.   package practical;
+import java.util.Scanner;
+public class Practical {
+     public static void main(String[] args)
+     {
+         int[]my=new int[10];//craete array(type[]name=new type [size])
+         Scanner input =new Scanner(System.in);
+         System.out.print("enter  "+my.length+"  values\n"+" ");
+         for(int i=0;i<10;i++)
+         {
+          my[i]=input.nextInt();
+         }
+         for(int i=0;i<10;i++)
+         {
+             System.out.println("indx[" +i+" ]value is "+my[i] +" ");
+         }
+    }
+}
+out put
+enter  10  values
+ 5,7,12,16,19,21,23,24,27,29
+indx[0]value is  5 
+indx[1]value is  7 
+indx[2]value is  12 
+indx[3]value is  16 
+indx[4]value is  19 
+indx[5]value is  21 
+indx[6]value is  23 
+indx[7]value is  24 
+indx[8]value is  27 
+indx[9]value is  29 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+29.  package maht;
+public class Maht {
+    public static void main(String[] args) {
+        double []ra=new double[12];
+    for(int a=1;a<=ra.length;a++)
+    {
+        ra[a]=Math.random()*100;//random methed insted of scanner  input 0 upto 99
+    }
+    for(int a=1;a<=ra.length;a++)
+    {
+        System.out.println("the random "+a+ " is "+ra[a] );
+    }
+    }
+    
+}
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+30.   import java.util.Scanner;
+public class Practical {
+     public static void main(String[] args)
+     { int[]my=new int[10];//craete array(type[]name=new type [size])
+         Scanner input =new Scanner(System.in);
+         System.out.print("enter "+my.length+"  values\n"+" ");
+         int sum=0;
+         double ava =0;
+         for(int i=0;i<10;i++)
+         {
+          my[i]=input.nextInt();
+         }
+         for(int i=0;i<10;i++)
+         {
+           sum+=my[i];
+            ava=sum/my.length;
+  System.out.println("indx[" +i+"]value is "+my[i] +" ");
+         }
+     System.out.println("the sum is "+sum);
+      System.out.println("the ava is"+ava);
+    }
+    
+}
+
+out put
+enter  10  values
+ 45 ,10,20,30,40,50,60,70,780,90
+indx[0]value is 45 
+indx[1]value is 10 
+indx[2]value is 20 
+indx[3]value is 30 
+indx[4]value is 40 
+indx[5]value is 50 
+indx[6]value is 60 
+indx[7]value is 70 
+indx[8]value is 780 
+indx[9]value is 90 
+the sum is 1195
+the ava is119.0
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+31.  package practical;
+public class Practical {
+     public static void main(String[] args)
+     { 
+         int[]my={23,34,12,45,76,89,90,23,56,67};
+            int index=0;
+          double max=my[0];
+         for(int i=0;i<10;i++)
+         { 
+           if(max<my[i])
+        {
+            max=my[i];    
+             index=i;
+         }}
+         System.out.println("max="+max);
+         System.out.println("index of "+max+" is " +index);
+    }
+    
+}
+OUT PUT 
+max=90.0
+index of 90.0 is 6     
+%%%%%%%%%%%%%%%%%%%%%%%%%
+32.  package abcd;
+import java.util.Scanner;
+public class ABCD {
+  public static void main(String[] args) 
+  {
+     Scanner monum=new Scanner (System.in); String[]months={"jan","feb","mar","apri","jun","jul","may","oges","sep" ,"oct" ,"nove","des"};
+      System.out.println("enter the month number");
+      int num=monum.nextInt();
+      System.out.println("month is  "+ months[num-1]); 
+    }
+} 
+OUT PUT
+enter the month number
+5
+month is  jun
+*******************************************
+33.  package quation;
+import java.util.Scanner;
+public class QUATION {
+    public static void main(String[] args) 
+    {
+       Scanner input=new Scanner(System.in);
+        System.out.println("please enter n1");
+        int n1=input.nextInt();
+        System.out.println("please enter n2");
+        int n2=input.nextInt();
+        int lcf=1;
+        for(int i=1;i<=n2;i++)
+        {
+            if(n1%i==0&&n2%i==0)
+              lcf=i;  
+  }
+        System.out.println("the lcf of  "+n1+" and "+n2+" is "+lcf);
+    }   
+}
+OUT PUT
+please enter n1
+16
+please enter n2
+24
+the lcf of  16 and 24 is 8
+####################################
+34.  package quation;
+import java.util.Scanner;
+public class QUATION {
+    public static void main(String[] args) 
+    {
+       Scanner input=new Scanner(System.in);
+        System.out.println("please enter n1");
+        int n1=input.nextInt();
+        System.out.println("please enter n2");
+        int n2=input.nextInt();
+        int lcm=1;
+        for(int i=n1;;i++)
+        {
+            if(i%n1==0&&i%n2==0)
+            {
+             lcm=i;
+            break;
+            }
+        }
+ System.out.println("the lcm of  "+n1+" and "+n2+" is "+lcm);
+    }
+}
+OUT PUT
+please enter n1
+8
+please enter n2
+20
+the lcm of  8 and 20 is 40
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+35.  package quation;
+import java.util.Scanner;
+public class QUATION {
+    public static void main(String[] args) 
+    {
+       Scanner input=new Scanner(System.in);
+        System.out.println("please enter n1");
+        int n1=input.nextInt();
+        if(n1%5==0||n1%6==0)
+        {
+            System.out.println(n1 +"is divide by 6 or 5 ");  
+        }
+        else
+        System.out.println(n1 +"is not divide by 6 or 5 ");
+        if(n1%5==0&&n1%6==0)
+        {
+   System.out.println(n1 +"is divide both by 6 and 5 ");
+        }
+        else
+        System.out.println(n1 +"is not divide both by 6 and 5 ");
+        if(n1%5==0^n1%6==0)//the num difference true the same false
+        { System.out.println(n1 +"is divide by 6 or 5  but not both ");
+         }
+        else
+        System.out.println(n1 +"is divide by 6 or 5 both");
+    }
+       
+    
+}
+please enter n1
+30
+30is divide by 6 or 5 
+30is divide both by 6 and 5 
+30is divide by 6 or 5 both 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+36.  package quation;
+import java.util.Scanner;
+public class QUATION {
+    public static void main(String[] args) 
+    {
+       Scanner input=new Scanner(System.in);
+        System.out.println("please enter n1");
+        int n1=input.nextInt();
+        System.out.println("please enter n2");
+        int n2=input.nextInt();
+        System.out.println("please enter n3");
+        int n3=input.nextInt();
+        if(n1+n2>n3&&n1+n3>n2&&n2+n3>n1)
+        {
+            System.out.println(n1+","+n2+","+n3+","+" is  valid edge of triangle");
+        }
+else
+        System.out.println(n1+","+n2+","+n3+","+" is  not valid edge of triangle");
+   }  
+}
+OUT PUT
+please enter n1
+8
+please enter n2
+4
+please enter n3
+2
+8,4,2, is  not valid edge of triangle
+OTHER OUT PUT
+please enter n1
+8
+please enter n2
+7
+please enter n3
+6
+8,7,6, is  valid edge of triangle
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+37.  package motta;
+import java.util.Scanner;
+public class MOTTA {
+    public static void main(String[] args) 
+    {
+        Scanner cha=new Scanner(System.in);
+        System.out.println("please enter the letter");
+        char ch=cha.next().charAt(0);
+        
+        switch(ch)//swich statment include( switch(), case():,break;,and default:)
+        {
+            case('a'):case('e'):case('i'):case('o'):case('u'):
+                System.out.println("the entered letter is vowel letter");
+                   break;
+            case('y'):case('h'):
+                System.out.println("the entered letter is sometime vowel character");
+                   break;
+            default:
+                System.out.println("the entersd letter is consonant character");     
+        }
+    }  
+}
+OUT PUT
+please enter the letter
+o
+the entered letter is vowel letter
+please enter the letter
+g
+the entersd letter is consonant character
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+38.    package motta;
+public class MOTTA {
+    public static void main(String[] args) 
+    {
+        int i=1;
+        int n=1;
+        while(i<i+1)
+        {
+            n=i*i;
+            if(n>12000)
+            {
+            break;
+            }
+            i++;
+        }
+   
+        System.out.println(" the smallest value intiger in i^i >12000 is"+i);        
+        }   
+}  
+OUT PUT
+ the smallest value intiger in i^i >12000 is 110
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+39.  package motta;
+public class MOTTA {
+public static int getTotal(int a,int b,int c)
+{
+  int sum=a+b+c;  
+  return sum;
+}
+    public static void main(String[] args) {
+        {
+System.out.println("the sum of a&:"+getTotal(5,67,100));
+    }  
+    }   
+}
+OUT PUT
+the sum of a &b :172
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+40.  package motta;
+import java.util.Scanner;
+public class MOTTA {
+public static int getTotal(int num)        
+{ 
+    if( num !=0&&num%2==0)
+        System.out.println(num+" is even");
+    else if(num==0)
+        System.out.println(num+"  is zero");
+    else
+        System.out.println( num+"  is odd") ;
+    return 0;
+} 
+    public static void main(String[] args)
+    {
+        Scanner in= new Scanner(System.in);
+    System.out.println("please num value");
+    int num1=in.nextInt();
+     getTotal(num1);   
+    }
+}
+OUT PUT
+please num value
+45
+45  is odd
+
+********************************************
+41.  package for_each_loop;
+public class For_each_loop {
+        public static void main(String[] args) 
+    {
+       int[]my={12,34,65,78,94,13,45,67};
+       for(int u:my)
+       {
+           System.out.print( u+",");
+       }
+    } 
+}
+OUT PUT
+12,34,65,78,94,13,45,67, 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+42.    package mamar;
+import java.util.Scanner;
+public class MAMAR {
+    public static void main(String[] args) 
+    {
+      int j;
+        int[][]we=new int[2][3];
+        Scanner input=new Scanner(System.in);
+        int i;
+        System.out.println("enter the array");
+        for( i=0;i<2;i++)
+         for(j=0;j<3;j++)
+              we[i][j]=input.nextInt();
+                System.out.println("the number of array is belloe");
+           {
+            for( i=0;i<2;i++)
+            {
+            for(j=0;j<3;j++)    
+            {
+                System.out.print(we[i][j]+" ");
+            }
+                System.out.print("\n ");
+       } }}}
+
+OUT PUT
+enter the array
+78
+45
+62
+35
+19
+61
+the number of array is belloe
+78 45 62 
+ 35 19 61 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+43.  package mamar;
+import java.util.Scanner;
+public class oop_exercise {
+    public static void main(String[] args) 
+    {
+     Scanner input=new Scanner (System.in);
+        System.out.println("enter the age of the driver");
+     int age=input.nextInt();
+      if(age>40&&age<60)
+            System.out.println("you are old so enough to drive");
+      else
+            System.out.println("you are not old so not  enough to drive");
+   
+    }
+}
+
+
+out put
+enter the age of the driver
+18
+you are not old  so not enough to drive
+enter the age of the driver
+45
+you are old  so enough to drive
+#################################
+44.  package mamar;
+import java.util.Scanner;
+public class oop_exercise {
+    public static void main(String[] args) 
+    {
+     Scanner input=new Scanner (System.in);
+        System.out.println("enter the age of the driver");
+     int age=input.nextInt();
+   String A = (age>40&&age<60)? "to drive":"not drive";
+        System.out.println(A);
+    }
+}
+out put
+enter the age of the driver
+45
+to drive
+enter the age of the driver
+85
+not drive
+###################################
+45.  package mamar;
+public class oop_exercise {
+    public static void main(String[] args) 
+    {
+        for(int i=100;i>=0;i--)
+        {
+            if(i%2==1)
+                System.out.print(i +" ,");
+        }
+    }
+}
+out put
+99 ,97 ,95 ,93 ,91 ,89 ,87 ,85 ,83 ,81 ,79 ,77 ,75 ,73 ,71 ,69 ,67 ,65 ,63 ,61 ,59 ,57 ,55 ,53 ,51 ,49 ,47 ,45 ,43 ,41 ,39 ,37 ,35 ,33 ,31 ,29 ,27 ,25 ,23 ,21 ,19 ,17 ,15 ,13 ,11 ,9 ,7 ,5 ,3 ,2,1,
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+46.  package mamar;
+public class oop_exercise {
+    public static void main(String[] args) 
+    { int i=100;
+        while( i>0)
+        {
+            if(i%2==1)
+                System.out.print(i +" ,");
+            i--;
+        } 
+    }
+}
+99 ,97 ,95 ,93 ,91 ,89 ,87 ,85 ,83 ,81 ,79 ,77 ,75 ,73 ,71 ,69 ,67 ,65 ,63 ,61 ,59 ,57 ,55 ,53 ,51 ,49 ,47 ,45 ,43 ,41 ,39 ,37 ,35 ,33 ,31 ,29 ,27 ,25 ,23 ,21 ,19 ,17 ,15 ,13 ,11 ,9 ,7 ,5 ,3 ,1
+
+*******************************************
+47.  package pgstudent;
+import java.util.ArrayList;
+import java.util.List;
+
+public class PGStudent {
+private int id,year;
+private String name,faculty;
+private double salary;
+//defaultconstructor
+public PGStudent(String name){
+this.name=name;
+year=5;
+faculty="informatics";
+this.name=name;
+year=5;
+faculty="informatics";
+}
+//overloadedconstructor
+public PGStudent(int id,double salary){
+this.id=id;
+this.salary=salary;
+//invokedefaultconstructor
+this.name="DEFAULT";
+this.year=5;
+this.faculty="informatics";
+}
+//gettersandsettersfordatamembers
+public int getId()
+{
+return  id ;
+}
+public void setId(int id){
+this.id=id;
+}
+public int getYear(){
+return year;
+}
+public void setYear(int year){
+this.year=year;
+}
+public String getName(){
+return name;
+}
+public void setName(String name){
+this.name=name;
+}
+public String getFaculty(){
+return faculty;}
+public void setFaculty(String faculty){
+this.faculty=faculty;
+}
+public double getSalary(){
+return salary;
+}
+public void setSalary(double salary){
+this.salary=salary;
+}
+//methodtoprintstudentinformation
+public void  main (){
+System.out.println("ID:"+id);
+System.out.println("Name:"+name);
+System.out.println("Faculty:"+faculty);
+System.out.println("Year:"+year);
+System.out.println("Salary:"+salary);
+}
+}
+
+//RegularStudentclass
+class RegularStudent{
+    private int id,age;
+private String fullName,department,gender;
+//constructor
+public RegularStudent(int id,String fullName,String department,String gender,int age)
+{
+this.id=id;
+this.fullName=fullName;
+this.department=department;
+this.gender=gender;
+this.age=age;
+}
+//gettersandsettersfordatamembers
+public int getId(){
+return id;
+}
+public void setId(int id){
+this.id=id;
+}
+public int getAge(){
+return age;
+}
+public void setAge(int age){this.age=age;
+}
+public String getFullName(){
+return fullName;
+}
+public void setFullName(String fullName){
+this.fullName=fullName;
+}
+public String getDepartment(){
+return department;
+}
+public void setDepartment(String department){
+this.department=department;
+}
+public String getGender(){
+return gender;
+}
+public void setGender(String gender){
+this.gender=gender;
+}//methodtoprintstudentinformation
+public void printInfo(){
+System.out.println("ID:"+id);
+System.out.println("FullName:"+fullName);
+System.out.println("Department:"+department);
+System.out.println("Gender:"+gender);
+System.out.println("Age:"+age);
+}
+}
+//Departmentclass
+class Department{
+private String depName;
+private int depId;
+//constructor
+public Department(String depName,int depId){
+this.depName=depName;
+this.depId=depId;
+}
+//gettersandsettersfordatamembers
+public String getDepName(){
+return depName;
+}public void setDepName(String depName){
+this.depName=depName;
+}
+public int getDepId(){
+return depId;
+}
+public void setDepId(int depId){
+this.depId=depId;
+}
+}
+ class main
+{
+public static void main(String[]args){
+//creatinglistofdepartments
+List<Department>departments=new ArrayList<Department>();
+//addingdepartmentstothelist
+departments.add(new Department("ComputerScience",1));
+departments.add(new Department("InformationTechnology",2));
+departments.add(new Department("ElectricalEngineering",3));
+//creatinglistofstudents
+List<RegularStudent>students=new ArrayList<RegularStudent>();
+//addingstudentstothelist
+students.add(new RegularStudent(1,"JohnSmith","ComputerScience","Male",20));
+students.add(new RegularStudent(2,"MaryJohnson","InformationTechnology","Female",
+22));
+students.add(new RegularStudent(3,"BobDavis","ElectricalEngineering","Male",21));
+//printinginformationofallstudents
+System.out.println("Listofallstudents:");
+for(RegularStudent student:students){
+student.printInfo();
+}
+//deletingastudentfromthelist
+students.remove(1); //removingMaryJohnson
+//updatinginformationofastudent
+RegularStudent bob=students.get(1);//gettingBobDavis
+bob.setFullName("RobertDavis");
+bob.setAge(22);     
+ 
+}}
+
+package pra.java;
+public class computers {
+    String name ;
+    int id ;
+    String depa ;
+    public void computers(String name,int id,String dep)
+    {
+        this.name=name;
+        this .id=id;
+        depa=dep;
+    } 
+    public void disp()
+    
+    {
+        System.out.println("_________________");
+        System.out.println("name:   "+this. name);
+        System.out.println("id:     "+this. id);
+        System.out.println("dep:    "+depa);
+        
+    }
+    public static void main(String[]args)
+    {
+        computers s1=new computers();//ctrat obj(cname oname=new cname())
+        computers s2=new computers();
+        computers s3=new computers();
+        s1.computers("mamaru",1401,"comput");//assing by calling(oname.cname(v1,v2,v3.......))
+        s2.computers("abay ",1402,"A,econo");
+        s3.computers("ze",1403,"sp.science");
+        s1.disp();//display ( oname.mname())
+        s2.disp();
+        s3.disp();
+    }    
+}
+out put
+_________________
+name:   mamaru
+id:     1401
+dep:    comput
+_________________
+name:   abay 
+id:     1402
+dep:    A,econo
+_________________
+name:   ze
+id:     1403
+dep:    sp.science
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+48.  package sum_each_digit;
+import java.util.Scanner;
+public class SUM_each_digit {
+ public static void main(String[] args)
+    {
+        Scanner obj=new Scanner (System.in);
+        System.out.println("please enter the num value");
+        int num =obj.nextInt();
+        int sum=0;
+       int pro=1;
+        for(int i=0;i<3;i++)
+        {
+           int a= num%10;
+           int b=num/10;
+           num=b;
+           sum+=a;
+           pro*=a;
+        }     
+        System.out.println("the sum of digit is \t"+sum);
+        System.out.println("the product of digit is \t"+pro);
+    }
+    
+}
+
+out put 
+please enter the num value
+453
+the sum of digit is 	12
+the product of digit is 	60
